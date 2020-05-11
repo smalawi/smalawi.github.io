@@ -1,0 +1,9 @@
+html {
+	background-color: #fcfff5;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	max-width: 500px;
+}
