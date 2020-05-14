@@ -3,7 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Sayed Malawi</title>
-		<link href="styles/style.css" rel="stylesheet" type="text/css">
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="javascript/toggle.js"></script>
 	</head>
 	<body>
         <div class="panel-container">
@@ -11,10 +13,24 @@
                 <div class="panel-margins">
                     <h1>This is my site.</h1>
                     <p>Stuff incoming.</p>
+                    <div id="nav">
+                        <p><a href="#panel2">Here's some more info.</a></p>
+                        <p><a href="#panel3">And here's some other thing.</a></p>
+                    </div>
                 </div>
             </div>
             <div class="rounded-panel">
-                <img src="images/athens.jpg">
+                <div id="panel1" class="toggle">
+                    <img src="images/athens.jpg">
+                </div>
+                <div id="panel2" class="toggle panel-margins" style="display:none">
+                    <p>More info goes here!</p>
+                    <p><a href="index.html" class="backbutton">take me back</a></p>
+                </div>
+                <div id="panel3" class="toggle panel-margins" style="display:none">
+                    <p>You've discovered some other thing.</p>
+                    <p><a href="index.html" class="backbutton">take me back</a></p>
+                </div>
             </div>
         </div>
 	</body>
