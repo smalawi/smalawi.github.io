@@ -1,5 +1,5 @@
 $(document).ready(function(){ 
-    $("#nav a").click(function(e){
+    $("a.openpanel").click(function(e){
         e.preventDefault();
         $(".toggle").hide();
         var toShow = $(this).attr('href');
