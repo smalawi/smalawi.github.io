@@ -136,6 +136,12 @@ button {
 	margin-left: .5em;
 }
 
+.button-submit-text {
+	padding-left: 90px;
+	margin-left: .5em;
+	font-style: italic;
+}
+
 @keyframes colorshift {
     /*100% { background: linear-gradient(to top left, turquoise, rgba(255, 153, 150, 0), yellow), linear-gradient(to top right, orange, rgba(255, 153, 150, 0), green) rgba(200, 0, 255, 1); }*/
 	0% { background: linear-gradient(to top left, white, rgba(255, 153, 150, 0), red), linear-gradient(to top right, yellow, rgba(255, 153, 150, 0), magenta) rgba(0, 153, 255, 1); }
