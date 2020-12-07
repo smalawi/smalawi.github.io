@@ -32,7 +32,7 @@
                 </div>
                 <div id="panel2" class="toggle panel-margins" style="display:none">
                     <h1 class="gradient-text"><i>all about me</i></h1>
-                    <p>I was born in November 1996.</p>
+                    <p>I was born in late 1996.</p>
                     <p>I'm a data engineer.</p>
                     <p>I founded the Bird Club of Swarthmore College. You can read about it <a href="https://bulletin.swarthmore.edu/spring-2016-issue-iii-cxiii/sayed-dreams-birds">here</a>, or <a href="https://swarthmorephoenix.com/2017/10/05/the-cassowary-strikes-into-the-woods-with-the-bird-club/">here</a>.</p>
                     <p><a href="index.html" class="backbutton"><i>take me back</i></a></p>
@@ -83,7 +83,7 @@
                 </div>
                 <div id="panel4" class="toggle panel-margins" style="display:none">
                     <h1 class="gradient-text" style="padding-left:2px ! important;"><i>you have 12743 unread emails</i></h1>
-                    <form id="email-form" action="https://formspree.io/f/moqpkvla" method="post">
+                    <form id="email-form" style="height: 140px ! important;" action="https://formspree.io/f/moqpkvla" method="post">
                         <ul>
                             <li>
                                 <label for="name">name: </label>
@@ -103,7 +103,7 @@
                 </div>
                 <div id="panel5" class="toggle panel-margins" style="display:none">
                     <h1 class="gradient-text"><i>when did i order this</i></h1>
-                    <form id="mailaddr-form" action="https://formspree.io/f/moqpkvla" method="post">
+                    <form id="mailaddr-form" style="height: 190px ! important;" action="https://formspree.io/f/moqpkvla" method="post">
                         <ul>
                             <li>
                                 <label for="name2">name: </label>
@@ -132,11 +132,27 @@
                     <p class="question">Q: Is it you in the picture?</p>
                     <p class="answer">A: It's me in the picture. My mom took the photo. We were in Athens.</p>
                     <p class="question">Q: What's your earliest memory?</p>
-                    <p class="answer">A: I vaguely remember a sailboat, sailing from left to right. On an overcast day. I'm pretty sure I made it up.</p>
+                    <p class="answer">A: I vaguely remember a sailboat, sailing from left to right. On an overcast day. I think my brain just made it up.</p>
                     <p class="question">Q: What's the dumbest thing you ever did to impress someone?</p>
                     <p class="answer">A: In preschool, there was this girl I really liked, so I told her something to the effect of "Watch this" and smashed my face into the floor, knocking in my front two upper incisors (baby teeth, thank god). I was inverse bucktoothed for, like, six months. I'm pretty sure that's my actual earliest memory.</p>
                     <p class="question">Q: Well? Did she go out with you?</p>
                     <p class="answer">A: Ha, ha.</p>
+                    <p class="question">Q: Why, exactly, does your website look like this?</p>
+                    <p class="answer">A: I know, it's kind of dumb. It might help to think of it as the cover of <i>The Temptations Sing Smokey</i>, in website form.</p>
+                    <p class="question">Q: Wow! It looks so much cooler now!</p>
+                    <p class="answer">A: Right?</p>
+                    <p class="question">Q: What is something about yourself you are loath to admit? Other than the tooth thing.</p>
+                    <p class="answer">A: I can never remember how to spell "Punxsutawney Phil" (the "Punxsutawney" part, specifically), so I always have to Google "phil groundhog" to get the right spelling.</p>
+                    <p class="question">Q: While we're on the subject, I heard you prefer the spelling "hampster," as opposed to "hamster." Is that true?</p>
+                    <p class="answer">A: Yes, it's true. I enjoy this spelling to such a degree that I have started to articulate the "p" sound in conversation.</p>
+                    <p class="question">Q: What did you think of the Joker movie?</p>
+                    <p class="answer">A: I haven't seen it, actually. I did see the last Star Wars, though. Did you see that?</p>
+                    <p class="question">Q: Yeah. I'm gonna be honest, I thought it sucked. J. J. Abrams is a nightmare monster who exists solely to ruin my favorite franchises.</p>
+                    <p class="answer">A: I can understand that. I certainly wouldn't argue it was a great movie, but I did think it was pretty funny, especially towards the end. I objectively preferred it to <i>Last Jedi</i>, but I also liked <i>Solo</i> better than <i>Rogue One</i>, so make of that what you will.</p>
+                    <p class="question">Q: What is the operational conceit of this FAQ?</p>
+                    <p class="answer">A: The operational conceit is that I'm not just the one writing the answers&mdash;I'm also the one writing the questions.</p>
+                    <p class="question">Q: Correct.</p>
+                    <p class="answer">A: See what I mean?</p>
                     <p><a href="index.html" class="backbutton"><i>take me back</i></a></p>
                 </div>
             </div>
@@ -156,11 +172,13 @@
             function success() {
                 form.reset();
                 button.style = "display: none ";
-                status.innerHTML = "success! check your spam folder in a few months";
+                status.innerHTML = "success! check your spam in a few months";
+                status.style = "margin-bottom: 20px;"
             }
         
             function error() {
                 status.innerHTML = "failure! maybe try again?";
+                status.style = "margin-bottom: 20px;"
             }
         
             // handle the form submission event
@@ -204,10 +222,12 @@
                 form.reset();
                 button.style = "display: none ";
                 status.innerHTML = "success!";
+                status.style = "margin-bottom: 20px;"
             }
         
             function error() {
                 status.innerHTML = "failure! maybe try again?";
+                status.style = "margin-bottom: 20px;"
             }
         
             // handle the form submission event
