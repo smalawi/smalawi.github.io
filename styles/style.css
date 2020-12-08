@@ -166,3 +166,21 @@ button {
 /*background: linear-gradient(to top left, white, rgba(255, 153, 150, 0), red), linear-gradient(to top right, yellow, rgba(255, 153, 150, 0), magenta) rgba(0, 153, 255, 1);
 	60% { background: linear-gradient(to top left, lavender, rgba(255, 153, 150, 0), indigo), linear-gradient(to top right, yellow, rgba(255, 153, 150, 0), magenta) rgba(100, 255, 0, 1); }
 */
+
+.char1 {
+	transform-origin: bottom center;
+	position: absolute;
+	transform: rotate(-20deg) translate(-1em, -0.3em);
+}
+
+.char2 {
+	transform-origin: bottom center;
+	position: absolute;
+	transform: rotate(20deg) translate(-0.7em);
+}
+
+.char3 {
+	transform-origin: bottom center;
+	position: absolute;
+	transform: rotate(-12deg) translate(0.4em, 0.2em);
+}
