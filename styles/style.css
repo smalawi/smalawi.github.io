@@ -21,7 +21,7 @@ html {
 	width: 450px;
 	height: 600px;
 	margin: 5px;
-	overflow: scroll;
+	overflow: auto;
 }
 
 img {
