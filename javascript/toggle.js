@@ -12,4 +12,11 @@ $(document).ready(function(){
         $("#" + id).hide();
         $("#panel1").show();
     });
+
+    $("a.backwritingbutton").click(function(e){
+        e.preventDefault();
+        var id = $(this).closest('div').attr('id');
+        $("#" + id).hide();
+        $("#panel7").show();
+    });
 });
