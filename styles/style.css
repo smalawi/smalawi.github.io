@@ -221,3 +221,9 @@ button {
 	width: 60%;
 	border-radius: 0px;
 }
+
+.bulleted-list {
+	list-style: circle;
+	margin-left: 20px;
+	margin-top: -10px;
+}
